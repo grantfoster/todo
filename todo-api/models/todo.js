@@ -7,7 +7,7 @@ var todoSchema = new mongoose.Schema({
     },
     completed: {
         type: Boolean,
-        default: true
+        default: false
     },
     created_date: {
         type: Date,
@@ -18,7 +18,3 @@ var todoSchema = new mongoose.Schema({
 var Todo = mongoose.model('Todo', todoSchema);
 
 module.exports = Todo;
-
-//name
-//completed
-//created_date
